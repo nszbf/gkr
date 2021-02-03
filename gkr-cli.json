@@ -1,0 +1,67 @@
+{
+    "prefix": "@gkr",
+    "stubs": {
+        "apps": "apps",
+        "libs": "libs"
+    },
+    "apps": {
+        "server": {
+            "path": "apps/server",
+            "source": "src",
+            "output": "dist",
+            "entry": "main.ts",
+            "dist": "server.js",
+            "tsconfig": "tsconfig.build.json"
+        }
+    },
+    "libs": {
+        "core": {
+            "path": "libs/core",
+            "source": "src",
+            "output": "dist",
+            "tsconfig": "tsconfig.build.json"
+        },
+        "database": {
+            "path": "libs/database",
+            "source": "src",
+            "output": "dist",
+            "tsconfig": "tsconfig.build.json"
+        },
+        "redis": {
+            "path": "libs/redis",
+            "source": "src",
+            "output": "dist",
+            "tsconfig": "tsconfig.build.json"
+        },
+        "sms": {
+            "path": "libs/sms",
+            "source": "src",
+            "output": "dist",
+            "tsconfig": "tsconfig.build.json"
+        },
+        "queue": {
+            "path": "libs/queue",
+            "source": "src",
+            "output": "dist",
+            "tsconfig": "tsconfig.build.json"
+        },
+        "restful": {
+            "path": "libs/restful",
+            "source": "src",
+            "output": "dist",
+            "tsconfig": "tsconfig.build.json"
+        },
+        "user": {
+            "path": "libs/user",
+            "source": "src",
+            "output": "dist",
+            "tsconfig": "tsconfig.build.json"
+        },
+        "content": {
+            "path": "libs/content",
+            "source": "src",
+            "output": "dist",
+            "tsconfig": "tsconfig.build.json"
+        }
+    }
+}

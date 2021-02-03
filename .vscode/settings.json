@@ -1,0 +1,24 @@
+{
+    "git.ignoreLimitWarning": true,
+    "editor.formatOnSave": false,
+    "eslint.debug": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.workingDirectories": [
+        { "pattern": "./apps/*/" },
+        { "pattern": "./libs/*/" },
+        { "pattern": "./packages/*/" }
+    ],
+    "fileheader.customMade": {
+        "Description": "",
+        "Author": "南宫漠",
+        "Homepage": "https://gkr.io",
+        "My Blog": "https://jikebianma.com",
+        "Date": "Do not edit",
+        "LastEditTime": "Do not edit",
+        "Licensed": "MIT"
+    },
+    "editor.minimap.enabled": false,
+    "typescript.tsdk": "node_modules/typescript/lib"
+}

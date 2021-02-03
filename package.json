@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "private": true,
+    "scripts": {
+        "setup": "yarn install && lerna bootstrap && lerna link",
+        "reset": "yarn clear && yarn setup",
+        "clear": "yarn clean && lerna clean -y && rm -rf node_modules",
+        "clean": "lerna run clean --stream",
+        "start:dev": "concurrently -r -k \"yarn cli start server\" \"yarn wadmin dev\"",
+        "dev": "lerna run dev --parallel",
+        "build": "yarn clean && lerna run build --stream",
+        "lint": "lerna run lint --stream",
+        "tsnode": "NODE_ENV=development ts-node --files -T -r tsconfig-paths/register -P tsconfig.build.json",
+        "gkr": "node ./packages/cli/src/tsrun.js",
+        "dev:server": "yarn gkr start server -w",
+        "prod:server": "cd apps/server/dist && node ./server.js start",
+        "build:server": "yarn gkr build server",
+        "excute:server": "yarn gkr excute server",
+        "ds": "yarn dev:server",
+        "ps": "yarn prod:server",
+        "bs": "yarn build:server",
+        "es": "yarn excute:server",
+        "pre": "yarn workspace @gkr/cli build && lerna link && yarn workspace @gkr/cli watch",
+        "wadmin": "yarn workspace @gkr/admin",
+        "wserver": "yarn workspace @gkr/server",
+        "wdb": "yarn workspace @gkr/database",
+        "wredis": "yarn workspace @gkr/redis",
+        "wqueue": "yarn workspace @gkr/queue",
+        "wsms": "yarn workspace @gkr/sms",
+        "wrestful": "yarn workspace @gkr/restful",
+        "wuser": "yarn workspace @gkr/user",
+        "wcontent": "yarn workspace @gkr/content",
+        "up": "lerna exec -- ncu -u"
+    },
+    "workspaces": [
+        "apps/*",
+        "libs/*",
+        "packages/*"
+    ],
+    "devDependencies": {
+        "concurrently": "^5.3.0",
+        "lerna": "^3.22.1",
+        "ts-node": "^9.1.1",
+        "tsconfig-paths": "^3.9.0",
+        "typescript": "^4.1.3"
+    }
+}

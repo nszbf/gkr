@@ -1,0 +1,13 @@
+{
+    "moduleFileExtensions": ["js", "json", "ts"],
+    "rootDir": ".",
+    "testEnvironment": "node",
+    "testRegex": ".e2e-spec.ts$",
+    "transform": {
+        "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "moduleNameMapper": {
+        "@gkr/core/(.*)": "<rootDir>/../libs/common/src/$1",
+        "@gkr/core": "<rootDir>/../libs/common/src"
+    }
+}

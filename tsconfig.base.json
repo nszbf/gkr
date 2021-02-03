@@ -1,0 +1,46 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "target": "esnext",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "declaration": true,
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "alwaysStrict": true,
+        "sourceMap": true,
+        "incremental": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "noUnusedLocals": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "allowSyntheticDefaultImports": true,
+        "pretty": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "noImplicitAny": true,
+        "allowJs": true,
+        "lib": ["dom", "dom.iterable", "esnext", "scripthost", "es2015.symbol"],
+        "noEmit": false,
+        "baseUrl": ".",
+        "paths": {
+            "@gkr/*": ["libs/*/src", "apps/*/src"],
+            "@gkr/common/*": ["libs/common/src/*"],
+            "@gkr/core/*": ["libs/core/src/*"],
+            "@gkr/database/*": ["libs/database/src/*"],
+            "@gkr/restful/*": ["libs/restful/src/*"],
+            "@gkr/redis/*": ["libs/redis/src/*"],
+            "@gkr/queue/*": ["libs/queue/src/*"],
+            "@gkr/user/*": ["libs/user/src/*"],
+            "@gkr/content/*": ["libs/content/src/*"],
+            "@gkr/server/*": ["apps/server/src/*"],
+            "@gkr/admin/*": ["apps/admin/src/*"],
+            "@gkr/admin/umi/*": ["apps/admin/src/.umi/*"]
+            // "@gkr/admin/*": ["apps/admin/src/*"],
+            // "@gkr/admin/umi/*": ["apps/admin/src/.umi/*"]
+        }
+    }
+}
