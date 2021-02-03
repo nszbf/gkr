@@ -22,7 +22,7 @@
 - ...
 
 
-基本功能参考
+基本功能一览
 - [视频1](https://lichnow.com/1.mp4)
 - [视频2](https://lichnow.com/2.mp4)
 - [视频3](https://lichnow.com/3.mp4)
